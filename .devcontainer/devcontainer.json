@@ -1,0 +1,22 @@
+{
+  "dockerFile": "Dockerfile",
+  "runArgs": [
+    "--add-host=host.docker.internal:host-gateway",
+    "-e",
+    "SPA_SERVER_ADDR=http://host.docker.internal:3000"
+  ],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "dotnet.defaultSolution": ""
+      },
+      "extensions": [
+        "patcx.vscode-nuget-gallery",
+        "ms-dotnettools.csdevkit",
+        "EditorConfig.EditorConfig",
+        "ms-vscode.vs-keybindings",
+        "zxh404.vscode-proto3"
+      ]
+    }
+  }
+}
